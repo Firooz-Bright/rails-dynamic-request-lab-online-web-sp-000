@@ -1,4 +1,5 @@
 class CreateStudents < ActiveRecord::Migration
+  
   def change
     create_table :students do |t|
       t.string :first_name
@@ -6,5 +7,6 @@ class CreateStudents < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    
   end
 end
